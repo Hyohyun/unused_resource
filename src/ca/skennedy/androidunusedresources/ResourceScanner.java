@@ -807,7 +807,7 @@ public class ResourceScanner {
                 System.out.println(resource);
                 // 파일안에 문자열 쓰기
                 try {
-					fw.write(resource.toString());
+					fw.write(resource.toString()+"\n");
 					fw.flush();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
