@@ -798,7 +798,13 @@ public class ResourceScanner {
 
         if (unusedResourceCount > 0) {
              System.out.println(unusedResourceCount + " unused resources were found:");
-             
+             try {
+					fw.write(unusedResourceCount + " unused resources were found:"+"\n");
+					fw.flush();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
             final SortedSet<Resource> sortedResources = new TreeSet<Resource>(mResources);
             
             
