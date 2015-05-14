@@ -641,7 +641,7 @@ public class ResourceScanner {
         }
         
         try {
-			fw = new BufferedWriter(new FileWriter(Loader.writeFile, false));
+			fw = new BufferedWriter(new FileWriter(Loader.writeFile, true));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

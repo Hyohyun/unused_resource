@@ -64,13 +64,13 @@ public class ProjectTreeOfAndroidStudio extends ProjectTree {
 //				return;
 //			}
 			
-			mManifestFile = new File("/Users/davidback/Desktop/android_repository/neo_goodoc_android_studio/app/src/main/AndroidManifest.xml");
+			mManifestFile = new File(Loader.PROJECT_PATH+"src/main/AndroidManifest.xml");
 			System.out.println("manifest file = " + mManifestFile.getAbsolutePath());
 			
-			mSrcDirectory = new File("/Users/davidback/Desktop/android_repository/neo_goodoc_android_studio/app/src");
+			mSrcDirectory = new File(Loader.PROJECT_PATH+"src");
 			System.out.println("java.srcDirs = " + mSrcDirectory.getAbsolutePath());
 			 
-			mResDirectory = new File("/Users/davidback/Desktop/android_repository/neo_goodoc_android_studio/app/src/main/res");
+			mResDirectory = new File(Loader.PROJECT_PATH+"src/main/res");
 			System.out.println("res.srcDirs = " + mResDirectory.getAbsolutePath());
 			
 		} catch (FileNotFoundException e) {
